@@ -132,5 +132,8 @@ sympy-plots-for-*.tex/
 *.sublime-project
 *.sublime-workspace
 
+# xelatex output
+*.xdv
+
 # output pdf files
 *.pdf
