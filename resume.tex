@@ -1,40 +1,36 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
 %!TEX root = resume.tex
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 % Choose bibliography style for formatting list of publications
 \usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
 \bibliography{papers}
-\usepackage{import}
+
+% I prefer Adobe Utopia font
 \usepackage{fourier}
 
 % Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
-\def\theme{MidnightBlue}
+\def\theme{Black}
 
 % More predefined colors can be found in 
 % https://en.wikibooks.org/wiki/LaTeX/Colors
 
 \usepackage{simplecv}
 
-\boldname{Cetin}{Doruk}{D.}
+% Bold name in bib
+\boldname{Wang}{Yuyang}{Y.}
 
 \begin{document}
 
 % Heading
-\headinginline{Doruk Çetin}{
-    Website: \website{dcetin.me} \\ 
-    Email: \email{dcetin@ethz.ch} \\
-    % LinkedIn: \linkedin{doruk-cetin} \\
-    GitHub: \github{dcetin}
+\headinginline{Yuyang \textsc{Wang}}{
+    ECE Department, UCSB \\
+    Santa Barbara, CA 93106 \\
+	\faPhoneSquare ~ (781)428-0408 \\
+    \faEnvelopeSquare ~ \email{wyy@ece.ucsb.edu} \\
+    % \faExternalLinkSquare ~ \website{cadlab.ece.ucsb.edu/~ywang} \\
+    % \faLinkedinSquare ~ \linkedin{yuyangucsb} \\
+    % \faGithubSquare ~ \github{wyywyy23} \\
 }
-
-% \headingphoto{Doruk Çetin}{
-%     Website: \website{dcetin.me} \\ 
-%     Email: \email{dcetin@ethz.ch} \\
-%     % LinkedIn: \linkedin{doruk-cetin} \\
-%     GitHub: \github{dcetin}
-% }{photo.png}
 
 % Page One
 \import{sections/}{education.tex}

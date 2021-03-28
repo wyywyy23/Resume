@@ -10,9 +10,11 @@
 \usepackage{enumitem}                       % List customization
 \usepackage{lastpage}                       % Page numbering
 \usepackage{fancyhdr}                       % Footers
-\usepackage[russian,english]{babel}         % Language styles
 \usepackage{graphicx}                       % Importing graphics
 \usepackage[export]{adjustbox}              % Aligning margins
+\usepackage{import}
+\usepackage{fontawesome}
+\usepackage[T1]{fontenc}
 
 % % Chinese
 % \usepackage{xeCJK}
@@ -33,7 +35,7 @@
 \setlength{\tabcolsep}{0in}
 
 % Quotes
-\usepackage[autostyle,english=american]{csquotes}
+\usepackage[autostyle]{csquotes}
 \MakeOuterQuote{"}
 
 % Hyperlinks
@@ -54,7 +56,7 @@
 % Shorthand
 \newcommand{\github}[1]{\href{https://github.com/#1/}{github.com/#1}}
 \newcommand{\email}[1]{\href{mailto:#1}{#1}}
-\newcommand{\website}[1]{\href{https://#1/}{#1}}
+\newcommand{\website}[1]{\url{#1}}
 \newcommand{\linkedin}[1]{\href{https://www.linkedin.com/in/#1/}{#1}}
 
 % Dummy environment
@@ -62,11 +64,12 @@
 
 % Inline heading
 \newcommand{\headinginline}[2]{
-    \begin{minipage}[t]{0.60\textwidth}
+    \noindent
+    \begin{minipage}[t]{0.50\textwidth}
     \vspace*{\fill}
     \Huge \textcolor{color-title}{#1}
-    \end{minipage}
-    \begin{minipage}[t]{0.35\textwidth}
+    \end{minipage}%
+    \begin{minipage}[t]{0.50\textwidth}
     \begin{flushright}
     #2
     \end{flushright}
