@@ -1,6 +1,18 @@
 %!TEX root = ../resume.tex
-\nocite{*}
-\printbibliography[title=Publications]
+
+\section{Publications}
+
+\outerlist{
+
+\entrybigsingleline{\textbf{Refereed Journal Papers}}{}
+\newrefcontext[labelprefix=J]
+\printbibliography[heading=none, omitnumbers=false, type=article]
+
+\entrybigsingleline{\textbf{Conference Papers}}{}
+\newrefcontext[labelprefix=C]
+\printbibliography[heading=none, omitnumbers=false, type=inproceedings]
+
+}
 
 % Can instead manually enter publications as shown:
 % \section{Publications}
